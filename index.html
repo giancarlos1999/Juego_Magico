@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Juego Magico</title>
+</head>
+<body>
+    
+    <div class="game-container">
+        <h1>"Juego Magico de Letras, Numeros y Animales"</h1>
+        <div id="score" class="score">Puntuación: 0</div>
+        <div id="letter" class="letter">A</div>
+        <div class="options">
+            <button class="option">A</button>
+            <button class="option">B</button>
+            <button class="option">C</button>
+            <button class="option">D</button>
+            <button class="option">E</button>
+            <button class="option">F</button>
+            <button class="option">G</button>
+            <button class="option">H</button>
+            <button class="option">I</button>
+            <button class="option">J</button>
+            <button class="option">K</button>
+            <button class="option">L</button>
+            <button class="option">M</button>
+            <button class="option">N</button>
+            <button class="option">O</button>
+            <button class="option">P</button>
+            <button class="option">Q</button>
+            <button class="option">R</button>
+            <button class="option">S</button>
+            <button class="option">T</button>
+            <button class="option">U</button>
+            <button class="option">V</button>
+            <button class="option">W</button>
+            <button class="option">X</button>
+            <button class="option">Y</button>
+            <button class="option">Z</button>
+            <button class="option"></button>
+            <button class="option"></button>
+            <button class="option"></button>
+            <button class="option"></button>
+        </div>
+        <div class="audio-controls">
+            <audio id="musica">
+                <source src="stranger-things-124008.mp3" type="audio/mpeg">
+            </audio>
+        
+            <div class="playback-controls">
+                <button id="playButton" onclick="playMusica()">▶️</button>
+                <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="1" onchange="adjustVolume(this.value)">
+                <button id="pauseButton" onclick="pauseMusica()">⏸️</button>
+            </div>
+            
+        </div>
+        
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

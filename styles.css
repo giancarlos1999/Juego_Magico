@@ -1,0 +1,79 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-image: url('letrasmagicas.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%; /* Ajusta la imagen al alto completo de la pantalla */
+    font-weight: bold;
+    
+}
+h1{
+    color: rgb(6, 216, 69);
+    font-size: 4rem; /* Usar unidades relativas como rem en lugar de píxeles */
+    padding-top: 5%; /* Usar porcentajes para márgenes/padding */
+    
+    
+}
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+
+
+.letter {
+    font-size: 48px;
+    margin-bottom: 20px;
+    
+}
+
+.option {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.score {
+    font-size: 24px;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    
+}
+.audio-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.playback-controls {
+    display: flex;
+    gap: 10px;
+}
+
+#volumeSlider {
+    width: 100%;
+}
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        padding-top: 250px;
+    }
+    /* Agrega más reglas CSS según sea necesario */
+    .option {
+        padding: 10px 5px;
+        font-size: 18px;
+        margin: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
